@@ -49,7 +49,7 @@ import (
 )
 
 const (
-	clientIdentifier = "geth" // Client identifier to advertise over the network
+	clientIdentifier = "kross" // Client identifier to advertise over the network
 )
 
 var (
@@ -198,7 +198,7 @@ var (
 	}
 )
 
-var app = flags.NewApp("the go-ethereum command line interface")
+var app = flags.NewApp("the KrossChain command line interface")
 
 func init() {
 	// Initialize the CLI app and start Geth
