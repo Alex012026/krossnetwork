@@ -48,3 +48,8 @@ help: Makefile
 	@echo " Choose a command run in go-ethereum:"
 	@sed -n 's/^#?//p' $< | column -t -s ':' |  sort | sed -e 's/^/ /'
 .PHONY: help
+#? bootnode: Build the bootnode executable
+bootnode:
+	go build -o $(GOBIN)/bootnode ./cmd/bootnode
+	@echo "Done building bootnode."
+	@echo "Run \"$(GOBIN)/bootnode\" to launch bootnode."
